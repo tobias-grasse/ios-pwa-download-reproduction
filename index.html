@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Bug Reproduction</title>
+    <link rel="manifest" href="app.webmanifest">
+    <style>
+    	a {
+	  display: block; 
+	}
+    </style>
+</head>
+<body>
+    <a href="download-file.php" download="dummy.pdf">Download PDF with Content-Disposition: attachment</a>
+
+    <a href="dummy.pdf" download=dummy.pdf">Download PDF directly</a>
+</body>
+</html>
+
